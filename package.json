@@ -1,0 +1,37 @@
+{
+  "name": "hexo-filter-asset-inline",
+  "version": "0.1.0",
+  "description": "inline css and js files on generate site",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JamesPan/hexo-filter-asset-inline"
+  },
+  "keywords": [
+    "hexo",
+    "filter",
+    "css",
+    "js",
+    "inline"
+  ],
+  "author": "Pan Jiabang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JamesPan/hexo-filter-asset-inline/issues"
+  },
+  "homepage": "https://github.com/JamesPan/hexo-filter-asset-inline",
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "functional.js": "^0.7.0",
+    "hexo-fs": "^0.1.5",
+    "is-url": "^1.2.1",
+    "sync-request": "^2.1.0"
+  },
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "mocha": "*"
+  }
+}
