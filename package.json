@@ -1,6 +1,6 @@
 {
   "name": "hexo-filter-asset-inline",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "inline css and js files on generate site",
   "main": "index.js",
   "scripts": {
