@@ -5,7 +5,7 @@
 [![Build Status](https://img.shields.io/travis/JamesPan/hexo-filter-asset-inline.svg)](https://travis-ci.org/JamesPan/hexo-filter-asset-inline)
 [![NPM Dependencies](https://img.shields.io/david/JamesPan/hexo-filter-asset-inline.svg)](https://www.npmjs.com/package/hexo-filter-asset-inline)
 [![Coverage Status](https://img.shields.io/coveralls/JamesPan/hexo-filter-asset-inline.svg)](https://coveralls.io/r/JamesPan/hexo-filter-asset-inline)
-![](https://img.shields.io/github/license/JamesPan/hexo-filter-asset-inline.svg)
+![](https://img.shields.io/npm/l/hexo-filter-asset-inline.svg)
 
 
 Inline remote and local asset files when generate site. Supports CSS and JS files.
