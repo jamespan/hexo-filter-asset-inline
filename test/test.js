@@ -21,6 +21,18 @@ describe('Inline', function() {
             $('link[rel=stylesheet]').each(inline_css("test/fixture", $));
             expect($.html()).to.equals(cheerio.load(fs.readFileSync("test/fixture/index4remote_css_result.html")).html());
         });
+        it('inline remote css file with http', function() {
+            var content = fs.readFileSync("test/fixture/index4remote_css_http.html");
+            var $ = cheerio.load(content);
+            $('link[rel=stylesheet]').each(inline_css("test/fixture", $));
+            expect($.html()).to.equals(cheerio.load(fs.readFileSync("test/fixture/index4remote_css_result.html")).html());
+        });
+        it('inline remote css file with https', function() {
+            var content = fs.readFileSync("test/fixture/index4remote_css_https.html");
+            var $ = cheerio.load(content);
+            $('link[rel=stylesheet]').each(inline_css("test/fixture", $));
+            expect($.html()).to.equals(cheerio.load(fs.readFileSync("test/fixture/index4remote_css_result.html")).html());
+        });
     });
     describe('JS', function() {
         it('inline local js file', function() {
@@ -28,12 +40,17 @@ describe('Inline', function() {
             var $ = cheerio.load(content);
             $('script').each(inline_js("test/fixture", $));
             expect($.html()).to.equals(cheerio.load(fs.readFileSync("test/fixture/index4local_js_result.html")).html());
-        });it('inline remote js file', function() {
+        });
+        it('inline local js file, but file not found', function() {
+            var content = fs.readFileSync("test/fixture/index4local_js_file_not_found.html");
+            var $ = cheerio.load(content);
+            $('script').each(inline_js("test/fixture", $));
+            expect($.html()).to.equals(cheerio.load(fs.readFileSync("test/fixture/index4local_js_file_not_found.html")).html());
+        });
+        it('inline remote js file', function() {
             var content = fs.readFileSync("test/fixture/index4remote_js.html");
             var $ = cheerio.load(content);
-
             $('script').each(inline_js("test/fixture", $));
-            //console.log($.html());
             expect($.html()).to.equals(cheerio.load(fs.readFileSync("test/fixture/index4remote_js_result.html")).html());
         });
     });
