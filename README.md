@@ -55,4 +55,7 @@ For remote js with URL.
 <script type="text/javascript" src="//cdn.bootcss.com/highlight.js/8.9.1/highlight.min.js?__inline=false"></script><!--will not inlined-->
 ```
 
+## Known Issue
 
++ not support font-awesome css
++ not support web font css
