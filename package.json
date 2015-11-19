@@ -4,7 +4,8 @@
   "description": "inline css and js files on generate site",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,7 @@
   },
   "devDependencies": {
     "chai": "^3.4.0",
+    "istanbul": "^0.4.0",
     "mocha": "*"
   }
 }
